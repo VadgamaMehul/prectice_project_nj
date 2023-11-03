@@ -2,7 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const app = express();
-const PORT = process.env.port;
+const PORT = process.env.port || 4000;
+console.log(PORT);
 
 // Connect to MongoDB database using Mongoose.
 //get route
